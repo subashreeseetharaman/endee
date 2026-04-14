@@ -1,0 +1,18 @@
+[
+    {
+        "keyword": "ai",
+        "answer": "Artificial Intelligence is the simulation of human intelligence in machines."
+    },
+    {
+        "keyword": "ml",
+        "answer": "Machine Learning is a subset of AI that allows systems to learn from data."
+    },
+    {
+        "keyword": "network",
+        "answer": "A computer network connects multiple devices to share resources."
+    },
+    {
+        "keyword": "database",
+        "answer": "A database is a structured collection of data."
+    }
+]
