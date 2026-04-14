@@ -1,24 +1,30 @@
-# Study Bridge AI
+# 📚 Study Bridge AI
 
 ## 📌 Description
-Study Bridge AI is a simple AI-based web app that helps students get answers to study-related questions.
+Study Bridge AI is a simple AI-powered search application that helps students get answers to study-related questions.
+
+It simulates an AI system using keyword matching and demonstrates the concept of vector-based search.
+
+---
 
 ## 🚀 Features
-- Ask questions
-- Get instant answers
-- Uses local dataset
+- Ask study-related questions
+- Instant answers
+- Simple and clean interface
+- Backend powered by Python Flask
 
-## 🛠 Technologies Used
-- HTML
-- CSS
-- JavaScript
+---
 
-## ▶️ How to Run
-1. Download project
-2. Open index.html
-3. Ask questions
+## 🧠 AI Workflow
 
-## 📊 Future Improvements
-- Add real AI API
-- Voice input
-- More subjects
+1. User enters a query
+2. Query is processed in backend
+3. Keywords are matched with dataset
+4. Relevant answer is returned
+
+👉 This simulates how vector databases like Endee perform similarity search using embeddings.
+
+---
+
+## 🗂 Project Structure
+

@@ -2,17 +2,30 @@
 <html>
 <head>
     <title>Study Bridge AI</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="text-align:center; font-family:Arial;">
 
     <h1>📚 Study Bridge AI</h1>
 
-    <input type="text" id="question" placeholder="Ask your question...">
-    <button onclick="getAnswer()">Ask</button>
+    <input type="text" id="question" placeholder="Ask your question..." style="width:300px; padding:10px;">
+    <button onclick="askAI()">Ask</button>
 
-    <div id="answerBox"></div>
+    <h3 id="answer"></h3>
 
-    <script src="script.js"></script>
+    <script>
+        async function askAI() {
+            let question = document.getElementById("question").value;
+
+            let res = await fetch('/ask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question: question })
+            });
+
+            let data = await res.json();
+            document.getElementById("answer").innerText = data.answer;
+        }
+    </script>
+
 </body>
 </html>
